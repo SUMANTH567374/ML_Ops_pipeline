@@ -19,7 +19,7 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
     try:
         # Assuming this preprocessing step is generic and suitable for your dataset
         # Modify as needed based on the actual structure of Salary_Data.csv
-        if 'Salary' not in df.columns or 'YearsExperience' not in df.columns:
+        if 'Salary' not in df.columns or 'Years of Experience' not in df.columns:
             raise KeyError("Expected columns 'YearsExperience' and 'Salary' not found.")
         return df  # No specific preprocessing in this example
     except KeyError as e:
